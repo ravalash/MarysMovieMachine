@@ -1,0 +1,24 @@
+#image-container img{
+    border: solid teal 5px;
+    margin: auto;
+    margin-top: 1em;
+    display: block;
+}
+
+.container {
+    background-color:lightgrey;
+    color:teal;
+}
+
+button {
+    color:teal;
+}
+
+h1 {
+    text-align:center;
+}
+
+.modal-content {
+    color:teal;
+    background-color: lightgray;
+}
