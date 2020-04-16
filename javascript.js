@@ -32,6 +32,8 @@ $("#searchBar").on('keypress', function (event){
 
 
 function loadPictures(response){
+  returnedImages = response;
+  if (returnedImages.data.length != 0){
   while (conversationRandomArray.length<6) {
     var randomNum = Math.ceil(Math.random()*6);
     var reroll = false;
@@ -45,8 +47,6 @@ function loadPictures(response){
       conversationRandomArray.push(randomNum)
     }
   }
-  console.log(conversationRandomArray);
-  returnedImages = response;
   $("#search-container").attr("style", "display:none");
   $("#image-container").attr("style", "display:block;min-height: 100vh;background-color:lightgrey");
   for(i=0;i<6;i++){
@@ -55,6 +55,10 @@ function loadPictures(response){
     selectedImage.attr("data-animate", returnedImages.data[i].images.original.url);
     selectedImage.attr("data-text", conversationStarters[conversationRandomArray[i]]);
   }
+}
+else{
+  $('#modal2').modal()
+}
 }
 
 
