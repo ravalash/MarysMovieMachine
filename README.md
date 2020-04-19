@@ -34,20 +34,23 @@
 Home Page
 
 
-![Home](screenshots/homepage.jpg "Home Page")
+![Home](screenshots/homepage.JPG "Home Page")
 
 
 
 Search Results
 
 
-![Search](screenshots/searchresults.jpg "Search Results")
+![Search](screenshots/searchresults.JPG "Search Results")
 
 
 
 Animated View
 
 
-![Animated](screenshots/animatedview.jpg "Animated View")
+![Animated](screenshots/animatedview.JPG "Animated View")
+
+
+
 
 
